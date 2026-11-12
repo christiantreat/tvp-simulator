@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="Browser-based transvenous pacemaker simulator: float the wire, read the EGM, set rate, output and sensitivity." />
+    <meta name="theme-color" content="#0b0f13" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0f13'/%3E%3Cpath d='M3 18h7l2-5 4 11 3-15 3 9h7' fill='none' stroke='%233ee06a' stroke-width='2.5' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <title>TVP Simulator</title>
+    <style>
+      html, body { margin: 0; background: #0b0f13; }
+      #boot { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; color: #9aa4ad; font: 14px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      #boot svg { width: 220px; height: 60px; }
+      #boot path { stroke-dasharray: 400; stroke-dashoffset: 400; animation: trace 1.6s linear infinite; }
+      @keyframes trace { to { stroke-dashoffset: 0; } }
+    </style>
+    <script type="module" crossorigin src="./assets/index-DfLCwdjB.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DYoq87Nu.css">
+  </head>
+  <body>
+    <div id="root">
+      <div id="boot">
+        <svg viewBox="0 0 220 60" aria-hidden="true"><path d="M0 34h60l8-14 10 32 12-48 10 30h120" fill="none" stroke="#3ee06a" stroke-width="2.5" stroke-linejoin="round"/></svg>
+        <div>Loading TVP Simulator…</div>
+        <noscript>This simulator needs JavaScript enabled.</noscript>
+      </div>
+    </div>
+  </body>
+</html>
